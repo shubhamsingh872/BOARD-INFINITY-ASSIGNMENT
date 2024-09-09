@@ -71,35 +71,58 @@ This guide will help you set up Firebase for your project. Follow these steps to
 
 # Components Documentation
 
-This document provides an overview of the key components in our project, including their purpose, props, state management, and validation.
-
 ## TaskSections Component
 
-**Purpose**: 
-The `TaskSections` component displays tasks organized by their status. It categorizes tasks into sections such as "Todo", "In Progress", and "Completed" to enhance organization and management.
+**Purpose:**
+Displays tasks organized by their status (Todo, In Progress, Completed).
 
-**Props**:
-- `status` (string): Used to filter and display tasks according to their current status.
-# TaskAdder Component
+**Props:**
+- `status`: Filters tasks based on their current status.
 
-## Overview
-
-The `TaskAdder` component allows users to create new tasks by filling out a form. The form includes fields for the task's name, description, and status. It uses local state to manage input values and integrates with Redux to dispatch actions for adding tasks.
-
-## Features
-
-- **Form Inputs**: Users can input a task's name, description, and status.
-- **Validation**: Ensures that the task's name is provided before allowing submission.
-- **State Management**: Utilizes React's `useState` for managing local form state and `useDispatch` from React Redux for dispatching actions.
-
-## Installation
-
-To use the `TaskAdder` component, make sure you have the following dependencies installed:
-
-```bash
-npm install react react-redux
+**State Management:**
 - Uses `useSelector` from React Redux to access tasks from the Redux store.
 
-**Example Usage**:
-```jsx
-<TaskSections status="In Progress" />
+## TaskAdder Component
+
+**Purpose:**
+Handles the creation of new tasks.
+
+**State Management:**
+- Uses `useState` for local state management.
+- Uses `useDispatch` to dispatch Redux actions for adding new tasks.
+
+**Validation:**
+- Ensures that a task's name is provided before submission.
+
+## UpdaterModal Component
+
+**Purpose:**
+Used for updating or deleting tasks.
+
+**Props:**
+- `onClose`: Closes the modal.
+- `isOpen`: Determines if the modal is open or closed.
+- `task`: The task being edited or deleted.
+- `setTask`: Updates the task's details.
+
+**State Management:**
+- Uses Redux to dispatch actions for updating or deleting tasks.
+- Uses `useDispatch` from React Redux to interact with the Redux store.
+
+### Additional Considerations:
+
+- **Code Examples:** Include code snippets to illustrate how to use the components.
+- **Styling:** Consider using a Markdown linter or a code formatter to improve readability.
+- **Organization:** Group components by functionality or relatedness.
+- **Versioning:** If applicable, document component versions and changes.
+- **Testing:** Mention any unit or integration tests for the components.
+
+**Example Usage:**
+```javascript
+import { TaskSections, TaskAdder, UpdaterModal } from './components';
+
+// ...
+
+<TaskSections />
+<TaskAdder />
+<UpdaterModal />
