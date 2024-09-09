@@ -69,7 +69,7 @@ This guide will help you set up Firebase for your project. Follow these steps to
    - Messaging Sender ID
    - App ID
 
-### **Components Documentation**
+### Components Documentation**
 
 - **Tasks Sections Component**:
   Purpose: The TaskSections component displays tasks organized by their status. It categorizes tasks into sections such as "Todo", "In Progress", and "Completed" for better organization and management.
