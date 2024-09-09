@@ -126,3 +126,40 @@ import { TaskSections, TaskAdder, UpdaterModal } from './components';
 <TaskSections />
 <TaskAdder />
 <UpdaterModal />
+
+## State Management with Redux Toolkit
+
+**Purpose:**
+- Manages the application's state in a predictable and efficient manner.
+- Simplifies Redux store setup and logic writing.
+
+**Key Concepts:**
+
+- **Slices:** Encapsulate related state logic and actions into reusable modules.
+- **Reducers:** Pure functions that update state based on actions.
+- **Actions:** Objects that describe state changes.
+- **Thunks:** Asynchronous actions that can perform side effects (e.g., API calls).
+- **Selectors:** Functions that extract specific parts of the state.
+
+**Actions:**
+
+- `addTask`: Adds a new task to the state and saves it to the Firebase database.
+- `updateTask`: Updates an existing task based on its ID.
+- `deleteTask`: Removes a task from the state by its ID.
+- `dndTask`: Handles drag-and-drop operations for tasks.
+
+### Store Configuration
+
+```javascript
+// store.js
+import { configureStore } from '@reduxjs/toolkit';
+import tasksReducer from './features/tasks';
+
+const store = configureStore({
+  reducer: {
+    tasks: tasksReducer,
+  },
+});
+
+export default store;
+
