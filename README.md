@@ -80,8 +80,24 @@ The `TaskSections` component displays tasks organized by their status. It catego
 
 **Props**:
 - `status` (string): Used to filter and display tasks according to their current status.
+# TaskAdder Component
 
-**State Management**:
+## Overview
+
+The `TaskAdder` component allows users to create new tasks by filling out a form. The form includes fields for the task's name, description, and status. It uses local state to manage input values and integrates with Redux to dispatch actions for adding tasks.
+
+## Features
+
+- **Form Inputs**: Users can input a task's name, description, and status.
+- **Validation**: Ensures that the task's name is provided before allowing submission.
+- **State Management**: Utilizes React's `useState` for managing local form state and `useDispatch` from React Redux for dispatching actions.
+
+## Installation
+
+To use the `TaskAdder` component, make sure you have the following dependencies installed:
+
+```bash
+npm install react react-redux
 - Uses `useSelector` from React Redux to access tasks from the Redux store.
 
 **Example Usage**:
