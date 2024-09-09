@@ -32,8 +32,33 @@ The goal of this project is to develop a Kanban board application using React or
    git clone https://github.com/profile/repo_name.git
    cd repo_name
 
+# Firebase Setup Guide
 
+This guide will help you set up Firebase for your project. Follow these steps to configure Firebase and integrate it with your application.
 
+## 1. Create a Firebase Project
+
+1. Go to the [Firebase Console](https://console.firebase.google.com/).
+2. Click on "Add project" and follow the on-screen instructions to create a new Firebase project.
+
+## 2. Enable Firestore Database
+
+1. In the Firebase Console, select your newly created project.
+2. Navigate to the "Build" section in the left sidebar.
+3. Click on "Firestore Database".
+4. Click on "Create database" and follow the prompts to set up Firestore.
+
+## 3. Obtain Firebase Configuration Details
+
+1. In the Firebase Console, go to the project settings by clicking on the gear icon next to "Project Overview".
+2. Under the "General" tab, locate your Firebase configuration details.
+3. Note down the following details:
+   - API Key
+   - Project ID
+   - Auth Domain
+   - Storage Bucket
+   - Messaging Sender ID
+   - App ID
 
 ### **Components Documentation**
 
