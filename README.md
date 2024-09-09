@@ -31,6 +31,15 @@ The goal of this project is to develop a Kanban board application using React or
    ```bash
    git clone https://github.com/profile/repo_name.git
    cd repo_name
+2. Install the dependencies:
+   ```
+   npm install
+   ```
+3. Start the development server:
+   ```
+   npm start
+   ```
+
 
 # Firebase Setup Guide
 
