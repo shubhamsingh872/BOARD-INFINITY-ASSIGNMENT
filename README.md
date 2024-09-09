@@ -17,7 +17,6 @@ The goal of this project is to develop a Kanban board application using React or
 - **Styling:** CSS Framework (Tailwind/Ant Design/Material UI/React Bootstrap)
 - **Database:** Firebase Firestore
 - **Hosting:** Vercel
-- **TypeScript:** (if implemented)
 
 ## Setup Instructions
 
