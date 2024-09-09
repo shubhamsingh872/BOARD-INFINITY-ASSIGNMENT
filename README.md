@@ -69,19 +69,21 @@ This guide will help you set up Firebase for your project. Follow these steps to
    - Messaging Sender ID
    - App ID
 
-### Components Documentation
+# Components Documentation
 
-- **Tasks Sections Component**:
-  Purpose: The TaskSections component displays tasks organized by their status. It categorizes tasks into sections such as "Todo", "In Progress", and "Completed" for better organization and management.
-  Props: Receives status to filter and display tasks according to their current status.
-  State Management: Uses useSelector from React Redux to access tasks from the Redux store.
+This document provides an overview of the key components in our project, including their purpose, props, state management, and validation.
 
-- **Task Adder Component**:
-  Purpose: The TaskAdder component handles the creation of new tasks. It provides a form that allows users to input a task's name, description, and status.
-  State Management: Utilizes useState for managing local state and useDispatch for dispatching Redux actions to add new tasks.
-  Validation: Ensures that a task's name is provided before allowing submission.
-- **UpdaterModal Component**:
-  Purpose: The UpdaterModal component is used for updating or deleting tasks. It opens as a modal dialog when a task is being edited or deleted, allowing users to modify task details or remove the task 
-  from the list.
-  Props: Receives onClose, isOpen, task, and setTask to manage the modal's visibility and handle task updates or deletions.
-  State Management: Utilizes Redux to dispatch actions for updating or deleting tasks. It uses useDispatch from React Redux to interact with the Redux store.
+## TaskSections Component
+
+**Purpose**: 
+The `TaskSections` component displays tasks organized by their status. It categorizes tasks into sections such as "Todo", "In Progress", and "Completed" to enhance organization and management.
+
+**Props**:
+- `status` (string): Used to filter and display tasks according to their current status.
+
+**State Management**:
+- Uses `useSelector` from React Redux to access tasks from the Redux store.
+
+**Example Usage**:
+```jsx
+<TaskSections status="In Progress" />
