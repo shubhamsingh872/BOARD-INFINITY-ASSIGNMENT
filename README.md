@@ -117,16 +117,6 @@ Used for updating or deleting tasks.
 - **Versioning:** If applicable, document component versions and changes.
 - **Testing:** Mention any unit or integration tests for the components.
 
-**Example Usage:**
-```javascript
-import { TaskSections, TaskAdder, UpdaterModal } from './components';
-
-// ...
-
-<TaskSections />
-<TaskAdder />
-<UpdaterModal />
-
 ## State Management with Redux Toolkit
 
 **Purpose:**
@@ -147,19 +137,4 @@ import { TaskSections, TaskAdder, UpdaterModal } from './components';
 - `updateTask`: Updates an existing task based on its ID.
 - `deleteTask`: Removes a task from the state by its ID.
 - `dndTask`: Handles drag-and-drop operations for tasks.
-
-### Store Configuration
-
-```javascript
-// store.js
-import { configureStore } from '@reduxjs/toolkit';
-import tasksReducer from './features/tasks';
-
-const store = configureStore({
-  reducer: {
-    tasks: tasksReducer,
-  },
-});
-
-export default store;
 
