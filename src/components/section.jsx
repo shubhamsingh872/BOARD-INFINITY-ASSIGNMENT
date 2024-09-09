@@ -41,7 +41,7 @@ const Section = ({
       ref={drop}
       className={`w-full  rounded-xl p-2 ${isOver ? "bg-opacity-75" : ""}`}
     >
-      <div className="bg-white min-h-60 rounded-b-xl pb-4">
+      <div className="bg-white min-h-60 rounded-xl pb-4">
         <Header
           text={status}
           count={filteredTasks.length}
