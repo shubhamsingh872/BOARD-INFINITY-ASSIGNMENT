@@ -140,4 +140,24 @@ Used for updating or deleting tasks.
 
 ## Learning Outcome
 
+**Any complexity/difficulty faced while developing this app?**
+- Yes, I encountered some challenges with integrating Firestore Database and real-time data handling. Ensuring smooth and efficient real-time updates in the UI required careful setup of listeners and state management. Additionally, integrating Ant Design as a component library presented its own difficulties, particularly in aligning its components with the dynamic data updates from Firestore and ensuring a consistent user experience.
+
+**Reason for not completing any one of the Checklist Items ( if any )?**
+- The reason I didn't implement TypeScript in the project is that I'm still in the process of learning it. I wanted to ensure I had a solid understanding of TypeScript before integrating it into the project, so I focused on mastering the core features first.
+
+**Did you get to learn anything new/key concepts?**
+- Yes, I learned about using Firestore Database to store and manage data efficiently, and how to handle real-time data updates in React. This involved understanding how to set up real-time listeners to keep the UI in sync with changes in the database.
+
+**Any feedback?**
+- The assignment was well-structured and provided a great opportunity to learn and apply key concepts with Firestore and Ant Design. However, it might be helpful to include more detailed guidance or resources on integrating complex components and real-time data handling. Additionally, some examples or best practices for working with these technologies could enhance the learning experience. Overall, the assignment was engaging and challenging, contributing significantly to my understanding of the technologies used.
+
+
+
+
+
+
+
+
+
 
