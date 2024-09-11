@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { toast } from "react-toastify";
 import { updateTask, deleteTask } from "../store/tasksSlice";
 import { PlusCircleFilled } from "@ant-design/icons";
-
+ 
 const Modal = ({ onClose, isOpen, task, setTask }) => {
   const dispatch = useDispatch();
 
