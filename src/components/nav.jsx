@@ -11,7 +11,7 @@ const Nav = () => {
             width={100}
           />
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
